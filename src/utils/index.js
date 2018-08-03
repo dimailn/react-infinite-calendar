@@ -1,4 +1,3 @@
-import getScrollbarSize from 'dom-helpers/util/scrollbarSize';
 import getDaysInMonth from 'date-fns/get_days_in_month';
 import getDay from 'date-fns/get_day';
 import isAfter from 'date-fns/is_after';
@@ -126,7 +125,6 @@ export class ScrollSpeed {
   }
 }
 
-export const scrollbarSize = getScrollbarSize();
 
 export function emptyFn() {
   /* no-op */

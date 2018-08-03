@@ -1,13 +1,20 @@
 import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
-import {scrollbarSize} from '../utils';
+import getScrollbarSize from 'dom-helpers/util/scrollbarSize';
 import styles from './Weekdays.scss';
+
+let scrollbarSize = null;
 
 export default class Weekdays extends PureComponent {
   static propTypes = {
     locale: PropTypes.object,
     theme: PropTypes.object,
   };
+
+  componentDidMount(){
+    if(!scrollbarSize)
+      scrollbarSize = getScrollbarSize()
+  }
 
   render() {
     const {weekdays, weekStartsOn, theme} = this.props;
