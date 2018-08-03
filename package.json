@@ -48,8 +48,8 @@
     "node-sass": "^4.5.0",
     "nwb": "^0.15.6",
     "nwb-sass": "^0.7.1",
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
   },
   "author": {
     "name": "Clauderic Demers",
